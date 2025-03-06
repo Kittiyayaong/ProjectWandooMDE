@@ -10,7 +10,7 @@
 ## 실습 순서
 
 1. MDE Basic Setting
-  * Onboarding device 
+  * [Onboarding device](https://github.com/Kittiyayaong/ProjectWandooModule1/blob/main/MDE%20Basic%20Setting-01.Onboarding%20Device.md)
 * MDE Attack Surface Reduction
 * MDE Next-generation Protection
 * MDE Endpoint Detection&Response
