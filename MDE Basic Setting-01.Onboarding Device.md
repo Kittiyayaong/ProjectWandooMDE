@@ -27,3 +27,16 @@ Intune을 사용하면 중앙 집중식으로 장치를 관리하고, 자동화�
 * Intune에서 Device Configuration 설정:
 Intune console > Device > Windows > Configuration > +create > + new policy > Platform : Windows / Profile : template > Microsoft defender for endpoint
 ![image](https://github.com/user-attachments/assets/9068d85f-ac3a-440a-83e8-a8aa0af3188f)
+
+### Sample sharing for all files
+이 설정은 Microsoft Defender for Endpoint가 모든 파일의 샘플을 Microsoft로 공유할지 여부를 결정합니다. 이를 통해 Microsoft는 잠재적인 위협을 분석하고 보안 기능을 개선할 수 있습니다.
+* Block: 이 옵션을 선택하면 모든 파일의 샘플 공유가 차단됩니다. 즉, 디바이스에서 Microsoft로 파일 샘플을 보내지 않습니다. 이 설정은 데이터 프라이버시를 강화할 수 있지만, 잠재적인 위협 분석에 제한이 있을 수 있습니다.
+* Not configured: 이 옵션을 선택하면 기본 설정이 적용됩니다. 기본적으로 샘플 공유가 활성화될 수 있으며, 이는 Microsoft가 잠재적인 위협을 분석하는 데 도움이 됩니다.
+
+### telemetry reporting frequency: 
+Microsoft Defender for Endpoint가 텔레메트리 데이터를 Microsoft로 보고하는 빈도를 조정합니다. 텔레메트리 데이터는 디바이스의 보안 상태와 관련된 정보를 포함합니다.
+* Enable: 이 옵션을 선택하면 텔레메트리 보고 빈도가 증가합니다. 즉, 디바이스가 risky한 상황일 경우에 더 자주 데이터를 Microsoft로 전송하여 보안 상태를 모니터링합니다. 이는 보안 위협을 더 빠르게 감지하고 대응하는 데 도움이 됩니다.
+* Not configured: 이 옵션을 선택하면 기본 설정이 적용됩니다. 기본적으로 텔레메트리 보고 빈도가 표준 수준으로 유지될 수 있습니다.
+
+### 설정완료
+![image](https://github.com/user-attachments/assets/ada0c902-27fa-4b47-8f91-7cdf7747df96)
