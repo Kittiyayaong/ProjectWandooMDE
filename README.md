@@ -10,7 +10,7 @@
 ## 실습 순서
 
 1. MDE Basic Setting
-  * Oneboarding device 
+  * Onboarding device 
 * MDE Attack Surface Reduction
 * MDE Next-generation Protection
 * MDE Endpoint Detection&Response
