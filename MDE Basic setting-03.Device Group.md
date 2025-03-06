@@ -13,10 +13,10 @@
 ---
 
 ### Device Group 설정하기 
-1. Device Group 생성하기: MDE Console > Setting > Endpoints > Device Groups > + add device group
+**1. Device Group 생성하기: MDE Console > Setting > Endpoints > Device Groups > + add device group**
 ![image](https://github.com/user-attachments/assets/ddc53f61-b404-4154-83cd-dd67e4b6d6d6)
 
-2. Remediation level 설정하기 : IT 환경에서 감지된 보안 위협을 처리하는 자동화 및 개입의 정도를 의미합니다. 
+**2. Remediation level 설정하기 : IT 환경에서 감지된 보안 위협을 처리하는 자동화 및 개입의 정도를 의미합니다.** 
 * No automated response (자동 응답 없음)
 * Semi - require approval for all folders (모든 폴더에 대해 승인 필요)
 * Semi - require approval for non-temp folders (임시 폴더가 아닌 폴더에 대해 승인 필요)
@@ -28,7 +28,7 @@ Tip. "Full Remediate Threats Automatically"를 설정하면 시스템이 감지�
 
 ---
 
-3. Device group 조건 설정
+**3. Device group 조건 설정**
 장치 그룹은 여러 조건을 기반으로 동적으로 장치를 추가할 수 있습니다. 
 ![image](https://github.com/user-attachments/assets/4cc4f2b1-7f1e-4a46-aa38-39ed5643e2f0)
 
@@ -39,7 +39,7 @@ Tip. "Full Remediate Threats Automatically"를 설정하면 시스템이 감지�
 * OR: 각 조건의 오른쪽에 있는 "+" 버튼을 클릭하여 새로운 조건을 추가
 “이름이 "Desktop-"으로 시작하거나, 이름이 "demo"로 끝나거나, 도메인이 "Contoso"로 시작하는 경우”
 
-4. 시나리오 1: 특정 부서(예: 마케팅 부서)의 장치들을 그룹화하여 해당 부서에 맞는 보안 정책을 적용합니다. 
+**4. 시나리오 1: 특정 부서(예: 마케팅 부서)의 장치들을 그룹화하여 해당 부서에 맞는 보안 정책을 적용합니다.**
 ![image](https://github.com/user-attachments/assets/dbeaf994-0bca-485d-bc9e-e19aa69a83ce)
 
 예시 조건: 
@@ -48,7 +48,8 @@ Tip. "Full Remediate Threats Automatically"를 설정하면 시스템이 감지�
   * 장치 태그에 "Marketing"이 포함
   * 운영 체제가 Windows 10인 경우
 
-5. 시나리오 2: Sales 부서에서 Project Y를 위해 사용되는 장치들을 그룹화합니다. 이 장치들은 Windows 10 또는 Windows 11을 실행 중이며, 뉴욕 사무실에 위치해 있습니다
+**5. 시나리오 2: Sales 부서에서 Project Y를 위해 사용되는 장치들을 그룹화합니다. 이 장치들은 Windows 10 또는 Windows 11을 실행 중이며, 뉴욕 사무실에 위치해 있습니다.**
+
 ![image](https://github.com/user-attachments/assets/7dc7d116-c3c2-4339-bf72-1585a2cdf48b)
 
 예시 조건: 
@@ -59,4 +60,12 @@ Tip. "Full Remediate Threats Automatically"를 설정하면 시스템이 감지�
 * 추가 조건으로 장치 이름이 "-NY" 또는 "-HQ"로 끝나거나
 * 도메인이 "Sales" 또는 "Marketing"을 포함하는 경우
 
-6. 
+**6. 사용자 접근 권한 설정 (Optional)**
+![image](https://github.com/user-attachments/assets/13f0281d-7cf3-4f47-b8cd-d0d6800460d0)
+
+이 단계는 선택 사항으로, 특정 장치 그룹에 접근할 수 있는 사용자와 Entra ID 그룹을 선택할 수 있습니다. 이를 통해 다음과 같은 기능을 제공합니다:
+* 특정 사용자 및 그룹에 접근 권한 부여: 특정 사용자나 Entra ID 그룹을 선택하면, 선택된 사용자와 그룹만 해당 장치 그룹에 접근할 수 있습니다. 선택되지 않은 사용자는 해당 장치 그룹에 접근할 수 없습니다
+* 티어링 모델 유지: 이 기능은 티어링 모델을 유지하는 데 매우 유용합니다. 예를 들어, 도메인 컨트롤러만 포함된 장치 그룹을 생성하고, T0 관리자만 이 장치들에 접근할 수 있도록 설정할 수 있습니다.
+
+**7. 설정 완료**
+![image](https://github.com/user-attachments/assets/eb3f1a55-5a1b-4a91-ba51-1ab172ee1207)
