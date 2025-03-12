@@ -1,4 +1,4 @@
-# ProjectWandooModule1
+# ProjectWandooMDE
 ## Hands-on Lab 개요
 본 실습 과정은 한국 마이크로소프트와 파트너의 기술 협력 프로그램 중 하나인 "Project Wandoo"의 첫번째 실습 과정입니다. Microsoft Defender for Endpoint feature기반으로 Attack Surface Reduction, Next-Generation Protection, Endpoint Detection&Response에 대한 기능을 구현 해봅니다. 
 
