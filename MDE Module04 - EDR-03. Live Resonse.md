@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/74c6fced-05e8-44dd-8682-f2710dc0ae93)## 3. Live Resonse 설정하기 
+## 3. Live Resonse 설정하기 
 
 ### Live Resonse란? 
 Live Response는 보안 운영 팀이 원격 셸 연결을 사용하여 장치에 즉시 액세스할 수 있도록 하는 기능입니다. 이를 통해 심층적인 조사 작업을 수행하고 실시간으로 식별된 위협을 신속하게 차단할 수 있습니다
