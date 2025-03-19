@@ -4,8 +4,8 @@
 
 ## 사전 요구 사항 (필요 도구)
 
-* Microsoft Defender for Endpoint, Microsoft Intune activation
-* MDE, Intune의 연결
+* [Microsoft Defender for Endpoint, Microsoft Intune activation](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Lab%20%EC%82%AC%EC%A0%84%20%EC%A4%80%EB%B9%84%EC%82%AC%ED%95%AD.md)
+  
 
 ## 실습 순서
 
