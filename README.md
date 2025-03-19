@@ -9,19 +9,19 @@
 
 ## 실습 순서
 
-1. MDE Basic Setting
+1. Module 01 - MDE Basic Setting
   * [Onboarding device](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module01%20-%20Basic%20Setting-01.Onboarding%20Device.md)
   * [Role-based Access control](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module01%20-%20Basic%20Setting-02.RBAC.md)
   * [Device Group](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module01%20-%20Basic%20Setting-03.Device%20Group.md)
-    
-2. MDE Attack Surface Reduction
+
+2. Module 02 - MDE Attack Surface Reduction
  * [Attack surface Rule](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module02%20-%20ASR-01.ASR%20Rule&Policy.md)
    
-3. MDE Next-generation Protection
+3. Module 03 - MDE Next-generation Protection
 * [Anti-virus](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module03%20-%20NGP-01.Anti-virus.md)
 * [Tamer Protection](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module03%20-%20NGP-02.Tamper%20Protection.md)
 
-4. Endpoint Detection&Response
+4. Module 04 - Endpoint Detection&Response
 * [EDR Basic Setting](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module04%20-%20EDR-01.EDR(Endpoint%20detection%20&%20response).md)
 * [Advanced Hunting](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module04%20-%20EDR-02.%20Advanced%20Hunting.md)
 * [Live Response](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module04%20-%20EDR-03.%20Live%20Resonse.md)
