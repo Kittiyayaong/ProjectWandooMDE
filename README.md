@@ -15,6 +15,13 @@
   * [Device Group](https://github.com/Kittiyayaong/ProjectWandooModule1/blob/main/MDE%20Basic%20Setting-03.Device%20Group.md)
     
 2. MDE Attack Surface Reduction
- * [ASR Rule](https://github.com/Kittiyayaong/ProjectWandooModule1/blob/main/MDE%20ASR-01.ASR%20Rule%26Policy.md)
-* MDE Next-generation Protection
-* MDE Endpoint Detection&Response
+ * [Attack surface Rule](https://github.com/Kittiyayaong/ProjectWandooModule1/blob/main/MDE%20ASR-01.ASR%20Rule%26Policy.md)
+   
+3. MDE Next-generation Protection
+* [Anti-virus](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20NGP-01.Anti-virus.md)
+* [Tamer Protection](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20NGP-02.Tamper%20Protection.md)
+
+4. Endpoint Detection&Response
+* [EDR Basic Setting](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20EDR-01.EDR(Endpoint%20detection%20%26%20response).md)
+* [Advanced Hunting](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20EDR-02.%20Advanced%20Hunting.md)
+* [Live Response](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20EDR-03.%20Live%20Resonse.md)
