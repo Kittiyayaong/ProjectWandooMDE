@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/f0c3b35f-7f37-4d60-99a3-ef804ee8ed26)# MDE Attack Surface Reduction(ASR)
-
 ## 1. ASR Rule 설정하기
 
 ### Attack Surface Reduction Rule이란? 
