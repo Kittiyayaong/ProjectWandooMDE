@@ -24,7 +24,7 @@ Endpoint.Microsoft.com에서 MDE Connection
 
 | 역할 이름                          | 주요 권한                                | 주 사용 목적                |
 | ------------------------------ | ------------------------------------ | ---------------------- |
-| **Global Administrator**       | 모든 설정 가능 (보안 포함 전체 권한)               | 계정/테넌트 전체 관리용 (실습엔 과함) |
+| **Global Administrator**       | 모든 설정 가능 (보안 포함 전체 권한)               | 계정/테넌트 전체 관리용 |
 | **Security Administrator**     | 대부분 보안 정책 구성, 디바이스 그룹 및 규칙 설정 가능     | 🔺**실습에 가장 적합**        |
 | **Security Reader**            | 경고 보기, Advanced Hunting 보기, 설정 변경 불가 | 모니터링 전용 사용자            |
 | **Security Operator**          | 경고 상태 업데이트, 조사 태스크 실행                | 경보 triage 담당자          |
