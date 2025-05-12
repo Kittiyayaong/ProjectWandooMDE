@@ -18,3 +18,4 @@ Endpoint.Microsoft.com에서 MDE Connection
 
 ![image](https://github.com/user-attachments/assets/1eee9003-f7aa-480e-8144-8489221bbd2c)
 
+## 본 랩은 "Security Administrator" 권한을 기반으로 제공됩니다. (최소 security admin 권한으로 참석 요망) 
