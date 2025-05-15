@@ -9,6 +9,14 @@
 
 ## :test_tube: 실습 순서
 
+| 모듈 번호 | 제목                                               | 설명                                                                 |
+|-----------|--------------------------------------------------|----------------------------------------------------------------------|
+| Module 1  | Entra ID Join + MDE 수동 온보딩                  | 디바이스를 Entra ID에 조인하고 MDE onboarding script 수동 실행        |
+| Module 2  | RBAC 연동 실습                                   | Entra ID 그룹 기반으로 MDE RBAC 역할 구성                            |
+| Module 3  | 조건부 액세스 + 디바이스 상태 기반 정책           | MDE 보안 상태를 조건부 액세스 정책과 연동                           |
+| Module 4  | Microsoft Defender 포털 기반 수동 정책 구성       | Intune 없이 포털에서 ASR, NGP, EDR 설정 구성                         |
+
+
 1. Module 01 - MDE Basic Setting
   * [Onboarding device](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module01%20-%20Basic%20Setting-01.Onboarding%20Device.md)
   * [Role-based Access control](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module01%20-%20Basic%20Setting-02.RBAC.md)
