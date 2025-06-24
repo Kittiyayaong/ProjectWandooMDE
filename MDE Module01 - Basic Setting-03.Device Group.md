@@ -70,3 +70,5 @@
 
 **7. 설정 완료**
 ![image](https://github.com/user-attachments/assets/eb3f1a55-5a1b-4a91-ba51-1ab172ee1207)
+
+### 🔗 [다음 Lab으로 이동하기 »](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module02%20-%20ASR-01.ASR%20Rule%26Policy.md)
