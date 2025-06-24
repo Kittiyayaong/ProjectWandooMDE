@@ -12,7 +12,7 @@
 * Device group: BYOD(Bring Your Own Device)를 사용할 때는 인트라넷에 접근할 수 없도록 설정되었습니다.  (Device group을 통해 특정 장치 그룹에 대한 접근 권한을 제한)
 ---
 
-### Device Group 설정하기 
+## ✅ Device Group 설정하기 
 **1. Device Group 생성하기: MDE Console > Setting > Endpoints > Device Groups > + add device group**
 ![image](https://github.com/user-attachments/assets/ddc53f61-b404-4154-83cd-dd67e4b6d6d6)
 
@@ -24,8 +24,9 @@
 * Full - remediate threats automatically (완전 자동으로 위협 해결)
 
 ---
-Tip. "Full Remediate Threats Automatically"를 설정하면 시스템이 감지된 위협을 자동으로 해결하므로, 해당 설정값을 추천 (수동 승인이나 개입 없이 자동)
-
+> ⭐️ Tip.
+> 
+> "Full Remediate Threats Automatically"를 설정하면 시스템이 감지된 위협을 자동으로 해결하므로, 해당 설정값을 추천 (수동 승인이나 개입 없이 자동)
 ---
 
 **3. Device group 조건 설정**
