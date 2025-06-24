@@ -8,7 +8,7 @@ Live Response는 보안 운영 팀이 원격 셸 연결을 사용하여 장치�
 * 고객사 Needs: 발생한 incident에 대해서 원격으로 정상화되었는지 확인
 * 설정 방향:  해당 incident에서 live respons를 활성화하여 shell을 통해 확인.
 
-### 설정하기 
+### ✅ 설정하기 
 1. Live Response 활성화하기
 * 설정위치: MDE console > setting > endpoints > advanced setting > Live response 
 
