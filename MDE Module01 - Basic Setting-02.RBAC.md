@@ -39,9 +39,13 @@ RBAC에서 역할을 만들 때, 해당 역할에 부여할 수 있는 권한들
 
    ![image](https://github.com/user-attachments/assets/fa201785-9fe9-490c-8dfe-80fc41a668b7)
 
+* Security operations만 설정된 계정은 MDE에서 '인시던트' 탭만 보이는 경우가 많습니다.
+* Security posture 권한이 없으면 '보안 권장 사항(Security recommendations)' 탭 접근이 차단됩니다.
+* Authorization and settings 권한이 없으면 RBAC이나 자동화 정책 등을 변경할 수 없습니다.
+
 3. Assignment 설정하기
 
-    ![image](https://github.com/user-attachments/assets/8e85ae02-f2b7-42a3-a2b5-4caf8188d1cd)
+   ![image](https://github.com/user-attachments/assets/8e85ae02-f2b7-42a3-a2b5-4caf8188d1cd)
    ![image](https://github.com/user-attachments/assets/f42d5522-8953-4f7a-9da1-7807fa4b3f8e)
    ![image](https://github.com/user-attachments/assets/3a1cc877-9edd-45de-967f-8110a4acece2)
 
