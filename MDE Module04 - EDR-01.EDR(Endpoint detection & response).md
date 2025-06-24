@@ -16,7 +16,7 @@ EDR(Endpoint Detection and Response)은 엔드포인트에서 발생하는 사�
 * 지속적인 위협 탐지: 클라우드 기반의 EDR 기능을 통해 비정상적인 행위를 탐지하고, 자동으로 대응합니다
 2. 설정방향 : 샘플 공유를 활성화하여 Microsoft Defender for Endpoint가 악성 샘플을 Microsoft로 전송하도록 설정합니다.
 
-### EDR 설정하기 
+### ✅ EDR 설정하기 
 1. Intune console(portal)에서 EDR policy 설정
 Intune console > Endpoint security > Endpoint Detection and Response > + Create policy 
 
@@ -51,15 +51,5 @@ Microsoft Defender for Endpoint 클라이언트 구성 패키지 유형을 지�
   
 ![image](https://github.com/user-attachments/assets/d425b8e6-064f-444b-95a8-6609b54c3d88)
 
-### EDR in Block mode 
-EDR in Block Mode를 활성화하지 않은 경우, EDR은 탐지된 위협에 대해 경고를 제공하고, 관리자가 수동으로 대응할 수 있도록 합니다. 그러나 EDR in Block Mode를 활성화하면, 탐지된 악성 아티팩트를 자동으로 차단하고 대응할 수 있는 추가적인 보호 기능을 제공합니다
-* EDR(Endpoint Detection and Response) 기능은 주로 악성 활동을 탐지하고 보안 팀에 알리며 사건 세부 사항을 기록하는 데 중점
-* EDR in Block Mode는 탐지된 악성 아티팩트를 자동으로 차단하고 대응할 수 있는 추가적인 보호 기능을 제공
 
-![image](https://github.com/user-attachments/assets/9b203479-daac-4ac2-a1b7-8f5a33938a8e)
-
-1. MDE console(portal)에서 EDR in block mode 활성화
-* 설정위치: Setting > Endpoints > Advanced Features > Enable EDR in Block mode
-
-![image](https://github.com/user-attachments/assets/7333ed10-d6fa-40c2-9d41-99fcf7c86de7)
-
+### 🔗 [다음 Lab으로 이동하기 »](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module04%20-%20EDR-02.%20Advanced%20Hunting.md)
