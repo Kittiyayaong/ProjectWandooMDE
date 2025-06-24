@@ -17,7 +17,7 @@
 
 ![image](https://github.com/user-attachments/assets/999524fc-8cac-4701-b2e5-907fc2df2554)
 
-#### 3. Intune에서 MDE 연결
+#### 3. Intune에서 MDE 연결 (intune.microsoft.com)
 
 ![image](https://github.com/user-attachments/assets/1eee9003-f7aa-480e-8144-8489221bbd2c)
 
