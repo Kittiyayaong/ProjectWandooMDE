@@ -1,4 +1,4 @@
-
+<img width="622" alt="image" src="https://github.com/user-attachments/assets/bc64207e-7c2e-44fa-bca5-8ab972b15849" />
 ## 2. MDE Roles-based Access Control
 
 ### RBAC 란? (Role-based Access Control, 역할 기반 엑세스 제어)
@@ -6,6 +6,14 @@
 특정 작업을 수행할 수 있는 사용자 제어: 사용자 정의 역할을 생성하고 세부적으로 Defender for Endpoint 기능에 대한 액세스를 제어합니다.
 특정 장치 그룹 또는 그룹에 대한 정보 보기 제어: 이름, 태그, 도메인 등 특정 기준에 따라 장치 그룹을 생성하고, 특정 Entra ID(Azure AD) 사용자 그룹을 사용하여 역할 액세스를 부여합니다
 
+### Lab 설명 
+
+| Task   | 설명                                                                       |
+| ------ | ------------------------------------------------------------------------ |
+| Task 1 | 기본 제공 역할 확인: 보안 운영자(Security Operator), 보안 관리자(Security Administrator) 등 |
+| Task 2 | 사용자 정의 역할 생성 및 역할에 대한 권한 세부 설정                                           |
+
+                                         
 ## ✅ Exercise 1. RBAC 설정하기 
 
 Task 1. 설정위치: MDE console > Permissions > Defender XRD Roles > + create customer role > **Wandoo-mde-rbac** role 생성 
@@ -19,12 +27,16 @@ Task 1. 설정위치: MDE console > Permissions > Defender XRD Roles > + create 
 ---
 
 Task 2. Permission 설정하기
+
+RBAC에서 역할을 만들 때, 해당 역할에 부여할 수 있는 권한들은 **3개 권한 그룹(Permission Group)**으로 분류되어 있습니다:
+
    ![image](https://github.com/user-attachments/assets/af06ef4e-0477-47e8-99c0-3742fbef6af9)
 
-Permission 설정값 
-* Security operations (운영): 일상적인 보안 운영을 관리하고 사건 및 경고에 대응합니다. 주로 보안 이벤트와 관련된 작업을 수행.
-* Security posture (상태관리): 조직의 보안 상태를 관리하고, Defender 평가를 수행하는 등의 작업을 담당합니다. 보안 정책의 준수 여부를 평가하고 개선.
-* Authorization and settings (설정관리): 보안 및 시스템 설정을 관리하며, 정책을 생성하고 관리합니다. 시스템의 전반적인 보안 설정.
+| Permission Group               | 설명                                             |
+| ------------------------------ | ---------------------------------------------- |
+| **Security operations**        | 보안 운영 작업 담당<br>- 인시던트 대응, 경고 확인, 위협 탐지 수행      |
+| **Security posture**           | 조직의 보안 상태 관리<br>- 위협 및 취약성 관리(TVM), 평가 및 개선 조치 |
+| **Authorization and settings** | 역할 및 설정 관리<br>- 시스템 설정 변경, 사용자/역할 할당, 보안 정책 조정 |
 
    ![image](https://github.com/user-attachments/assets/fa201785-9fe9-490c-8dfe-80fc41a668b7)
 
