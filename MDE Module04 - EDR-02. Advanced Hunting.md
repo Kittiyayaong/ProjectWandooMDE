@@ -26,7 +26,7 @@ Advanced Hunting은 Kusto Query Language (KQL)를 기반으로 하며, 이를 �
 * 고객사 Needs: 최근 30일 동안 안티바이러스 감지가 2회 이상 발생한 장치들을 확인 
 * 설정 방향: Advanced hunting을 통해 추가적인 내용을 쿼리를 통해 수동 검색한다.
 
-### Advanced Hunting Query test
+### ✅ Advanced Hunting Query test
 1. 위치: MDE console > Hunting > Advanced Hunting 
 
 ![image](https://github.com/user-attachments/assets/ed915a13-de31-465f-8278-803b882bf850)
@@ -51,7 +51,7 @@ Advanced Hunting은 Kusto Query Language (KQL)를 기반으로 하며, 이를 �
 * DeviceId와 DeviceName별로 이벤트를 그룹화하고, 각 그룹에서 가장 최근의 Timestamp와 ReportId를 선택하고, 이벤트 수를 계산합니다.
 * 이벤트 수가 2개를 초과하는 그룹만 선택합니다.
 
-### Advanced hunting detection rule 
+### ✅ Advanced hunting detection rule 
 1. Detection rule이란?
 Detection rule은 보안 시스템에서 특정 이벤트나 활동을 감지하고 경고를 생성하기 위해 설정하는 규칙입니다. 이러한 규칙은 보안 위협을 조기에 발견하고 대응할 수 있도록 도와줍니다.
 
@@ -95,3 +95,6 @@ Detection Rules의 특정 유형의 보안 이벤트
 MDE console > Hunting > Custom detection rules에서 생성된 rule 확인
 
 ![image](https://github.com/user-attachments/assets/d37b7452-3423-4971-b531-f8d461ddb357)
+
+
+### 🔗 [다음 Lab으로 이동하기 »](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module04%20-%20EDR-03.%20Live%20Resonse.md)
