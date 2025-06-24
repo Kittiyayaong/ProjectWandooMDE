@@ -59,3 +59,5 @@ RBAC에서 역할을 만들 때, 해당 역할에 부여할 수 있는 권한들
 
 ![image](https://github.com/user-attachments/assets/93ea30a1-d129-4c1b-8a1d-30be02e4ead1)
 ![Uploading image.png…]()
+
+### 🔗 [다음 Lab으로 이동하기 »](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module01%20-%20Basic%20Setting-03.Device%20Group.md)
