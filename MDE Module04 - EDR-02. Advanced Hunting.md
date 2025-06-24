@@ -33,7 +33,15 @@ Advanced Hunting은 Kusto Query Language (KQL)를 기반으로 하며, 이를 �
 
 2. 시나리오 1. PowerShell 다운로드 이벤트 탐지
 
-![image](https://github.com/user-attachments/assets/1b3dcbf1-1712-4246-9209-add92e96aa36)
+```powershell
+DeviceProcessEvents 
+| where Timestamp > ago(7d)
+| where FileName in~ ("powershell.exe", "powershell_ise.exe") 
+| where ProcessCommandLine has_any("WebClient", "DownloadFile", "DownloadData", "DownloadString", "WebRequest", "Shellcode", "http", "https") 
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType 
+| top 100 by Timestamp
+![image](https://github.com/user-attachments/assets/b87a7bed-d82f-4892-a4f6-5a71fcb36d57)
+```
 
 * DvcipCrProcessEvents: 이 쿼리는 DvcipCrProcessEvents 테이블에서 데이터를 가져옵니다.
 * where Timestamp > ago(7d): 지난 7일 동안의 데이터를 필터링합니다.
@@ -44,8 +52,14 @@ Advanced Hunting은 Kusto Query Language (KQL)를 기반으로 하며, 이를 �
 
 3. 시나리오 2. 최근 30일 동안 안티바이러스 감지가 2회 이상 발생한 장치들을 확인
 
-![image](https://github.com/user-attachments/assets/57c5742a-0e60-43cf-b852-ce4248519807)
-
+```powershell
+DeviceEvents 
+| where Timestamp > ago(30d) 
+| where ActionType == "AntivirusDetection“
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId, DeviceName 
+| where count_ > 2
+![image](https://github.com/user-attachments/assets/3887d19c-c39d-46d3-94e7-907de116cf43)
+```
 * DeviceEvents 테이블에서 Timestamp가 최근 30일 이내인 이벤트를 필터링합니다.
 * ActionType이 "AntivirusDetection"인 이벤트를 필터링합니다.
 * DeviceId와 DeviceName별로 이벤트를 그룹화하고, 각 그룹에서 가장 최근의 Timestamp와 ReportId를 선택하고, 이벤트 수를 계산합니다.
