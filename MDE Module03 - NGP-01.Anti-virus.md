@@ -32,4 +32,4 @@ Profile 유형 (참고)
 4. 설정 완료
 ![image](https://github.com/user-attachments/assets/613375a7-27eb-45da-b176-af1dbdb8efa7)
 
-
+### 🔗 [다음 Lab으로 이동하기 »](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module03%20-%20NGP-02.Tamper%20Protection.md)
