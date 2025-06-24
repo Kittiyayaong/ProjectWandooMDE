@@ -8,22 +8,13 @@
 
 ## ✅ Exercise 1. RBAC 설정하기 
 
-Task 1. 설정위치: MDE console > Permissions > Defender XRD Roles > + create customer role 
+Task 1. 설정위치: MDE console > Permissions > Defender XRD Roles > + create customer role > **Wandoo-mde-rbac** role 생성 
 
-   ![image](https://github.com/user-attachments/assets/15671c55-6f3b-4000-8d86-10d19c50d718)
+   <img width="1156" alt="image" src="https://github.com/user-attachments/assets/fa900fc4-73dd-40a0-80bc-9bd2c2e6b459" />
 
 > ⭐️ Tips. Endpoints roles & groups" 대신 "Microsoft Defender XDR"에 설정해야 하는 이유
-> * 통합된 권한 관리: Endpoint roles & groups에서는 장치에 대한 RBAC만 설정 - Microsoft Defender XDR 포털은 모든 워크로드에 대한 단일 권한 관리 경험을 제공합니다. 이를 통해 다양한 보안 경고와 사건을 한 곳에서 관리할 수 있으며, 이는 공격의 전체적인 맥락을 파악하는 데 도움이 됩니다
-> * 미래 데이터 소스 자동 포함: Defender XDR에서 "Include future data sources automatically" 옵션을 선택하면, 앞으로 추가될 새로운 데이터 소스도 자동으로 포함됩니다. 이를 통해 새로운 데이터 소스가 추가될 때마다 별도로 설정을 변경할 필요 없이 자동으로 접근 권한이 부여됩니다
-
-> ⭐️ Tips. Endpoint roles&groups에서 설정할 경우 지원/미지원
-> * 지원: Defender for Endpoint RBAC는 사용자가 볼 수 있는 장치, 접근할 수 있는 장치, 수행할 수 있는 디바이스 작업에 대해 세분화된 제어를 제공합니다.  또한, 특정 장치 그룹에 대한 정보 접근을 제어하고, 특정 작업을 수행할 수 있는 권한을 부여할 수 있습니다
-> * 미지원: Defender XDR에서 제공하는 ＂Include future data sources automatically＂ 옵션과 같은 기능은 Endpoint roles&groups에서는 지원되지 않습니다. 이 기능은 새로운 데이터 소스가 추가될 때마다 자동으로 접근 권한이 부여되는 기능으로, Defender XDR에서만 사용할 수 있습니다
-
----
-
-> ⭐️ Tips. 기존 MDE RBAC 패널 비활성화:
-> "Endpoints & Vulnerability Management" 스위치를 활성화하면, 기존의 MDE RBAC 패널(설정 > 엔드포인트 > 권한 - 역할)에서 역할을 추가할 수 있는 기능이 완전히 제거됩니다. 즉, 더 이상 기존 패널을 통해 역할을 추가하거나 수정할 수 없습니다.
+> 1. Microsoft Defender for Endpoint(MDE)는 XDR 플랫폼의 일부: MDE는 현재 Microsoft Defender XDR 플랫폼 아래 통합되어 관리됩니다. XDR(Extended Detection and Response) 포털은 Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps 등 여러 보안 제품의 통합 관리 허브입니다. 따라서 역할 기반 액세스(RBAC), 경고 관리, 인시던트 할당 등 공통 보안 운영 기능은 XDR 포털에서 중앙 설정됩니다.
+> 2. RBAC 범위가 MDE 단독이 아닌 XDR 전체에 적용: XDR의 RBAC는 인시던트, 경고, 디바이스 권한 등에 걸쳐있기 때문에, Defender XDR RBAC 설정 시, 해당 권한은 MDE에도 함께 적용됩니다.
 
 ---
 
