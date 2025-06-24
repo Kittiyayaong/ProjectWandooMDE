@@ -1,4 +1,3 @@
-<img width="622" alt="image" src="https://github.com/user-attachments/assets/bc64207e-7c2e-44fa-bca5-8ab972b15849" />
 ## 2. MDE Roles-based Access Control
 
 ### RBAC 란? (Role-based Access Control, 역할 기반 엑세스 제어)
