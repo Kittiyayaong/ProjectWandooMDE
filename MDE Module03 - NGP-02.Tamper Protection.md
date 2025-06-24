@@ -8,7 +8,9 @@
 1. 설정 위치
 Tamper Protection 설정하기 > Intune console > Endpoint Security > Antivirus > + create policy > Platform: windows, Profile: Windows security experience
 
-* Tip.'Windows Security Experience' 프로필: Microsoft Defender for Endpoint의 보안 설정을 통합적으로 관리할 수 있는 기능을 제공합니다. 이를 통해 Windows, macOS, Linux 등 다양한 플랫폼에서 일관된 보안 설정을 관리할 수 있습니다
+> ⭐️ Tip.
+>
+> 'Windows Security Experience' 프로필: Microsoft Defender for Endpoint의 보안 설정을 통합적으로 관리할 수 있는 기능을 제공합니다. 이를 통해 Windows, macOS, Linux 등 다양한 플랫폼에서 일관된 보안 설정을 관리할 수 있습니다
 
 2. Policy 이름
 ![image](https://github.com/user-attachments/assets/0c210bf5-2f96-4ce1-a527-7b506d8ad8f3)
@@ -29,3 +31,6 @@ Tamper Protection 정책은 Intune을 통해 설정된 후, 디바이스가 다�
 Device console에서 확인 가능 
 
 ![image](https://github.com/user-attachments/assets/fa38c42c-31c4-4c95-b49c-cd12f0d1e6fb)
+
+
+### 🔗 [다음 Lab으로 이동하기 »](https://github.com/Kittiyayaong/ProjectWandooMDE/blob/main/MDE%20Module04%20-%20EDR-01.EDR(Endpoint%20detection%20%26%20response).md)
