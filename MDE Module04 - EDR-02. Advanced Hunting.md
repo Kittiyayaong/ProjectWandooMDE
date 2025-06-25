@@ -31,24 +31,17 @@ Advanced Hunting은 Kusto Query Language (KQL)를 기반으로 하며, 이를 �
 
 ![image](https://github.com/user-attachments/assets/ed915a13-de31-465f-8278-803b882bf850)
 
-2. 시나리오 1. PowerShell 다운로드 이벤트 탐지
+2. 시나리오 1. 네트워크 관련 필드를 보고 싶다면?
+ DeviceNetworkEvents 또는 DeviceNetworkConnections 테이블을 사용
 
 ```powershell
-DeviceProcessEvents 
+DeviceNetworkEvents
 | where Timestamp > ago(7d)
-| where FileName in~ ("powershell.exe", "powershell_ise.exe") 
-| where ProcessCommandLine has_any("WebClient", "DownloadFile", "DownloadData", "DownloadString", "WebRequest", "Shellcode", "http", "https") 
-| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType 
+| where InitiatingProcessFileName in~ ("powershell.exe", "powershell_ise.exe")
+| where RemoteUrl has_any("http", "https")
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
-![image](https://github.com/user-attachments/assets/b87a7bed-d82f-4892-a4f6-5a71fcb36d57)
-
-* DvcipCrProcessEvents: 이 쿼리는 DvcipCrProcessEvents 테이블에서 데이터를 가져옵니다.
-* where Timestamp > ago(7d): 지난 7일 동안의 데이터를 필터링합니다.
-* where FileName in~('powershell.exe', 'powershell_ise.exe'): powershell.exe 또는 powershell_ise.exe 파일이 실행된 이벤트를 필터링합니다.
-* where ProcessCommandLine has_any ~ : 프로세스 명령줄에 "WebClient", "DownloadFile", "DownloadData", "DownloadString", "WebRequest", "Shellcode", "http", "https" 중 하나라도 포함된 이벤트를 필터링합니다.
-* project Timestamp~: 결과에서 Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, FileName, ProcessCommandLine, RemoteIp, RemoteUrl, RemotePort, RemoteIPType 열을 선택합니다.
-* top 100 by Timestamp: Timestamp 기준으로 상위 100개의 결과를 반환합니다.
 
 3. 시나리오 2. 최근 30일 동안 안티바이러스 감지가 2회 이상 발생한 장치들을 확인
 
