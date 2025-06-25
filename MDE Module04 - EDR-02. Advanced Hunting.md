@@ -48,10 +48,9 @@ DeviceNetworkEvents
 ```powershell
 DeviceEvents 
 | where Timestamp > ago(30d) 
-| where ActionType == "AntivirusDetection“
-| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId, DeviceName 
-| where count_ > 2
-![image](https://github.com/user-attachments/assets/3887d19c-c39d-46d3-94e7-907de116cf43)
+| where ActionType == "AntivirusDetection"
+| summarize LatestTimestamp = arg_max(Timestamp, ReportId), DetectionCount = count() by DeviceId, DeviceName 
+| where DetectionCount > 2
 ```
 * DeviceEvents 테이블에서 Timestamp가 최근 30일 이내인 이벤트를 필터링합니다.
 * ActionType이 "AntivirusDetection"인 이벤트를 필터링합니다.
