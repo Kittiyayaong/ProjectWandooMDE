@@ -40,8 +40,8 @@ DeviceProcessEvents
 | where ProcessCommandLine has_any("WebClient", "DownloadFile", "DownloadData", "DownloadString", "WebRequest", "Shellcode", "http", "https") 
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType 
 | top 100 by Timestamp
-![image](https://github.com/user-attachments/assets/b87a7bed-d82f-4892-a4f6-5a71fcb36d57)
 ```
+![image](https://github.com/user-attachments/assets/b87a7bed-d82f-4892-a4f6-5a71fcb36d57)
 
 * DvcipCrProcessEvents: 이 쿼리는 DvcipCrProcessEvents 테이블에서 데이터를 가져옵니다.
 * where Timestamp > ago(7d): 지난 7일 동안의 데이터를 필터링합니다.
